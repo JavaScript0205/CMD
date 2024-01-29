@@ -1,5 +1,8 @@
 Created by Saidov Muhammadjon: 
-Ushbu dastur Windows CMD ning javada yozilgan clone varianti hisoblanadi. Dastur ishga tushganida siz "C://" locationda bo'lasiz. Quyidagi buyruqlar yordamida CMDdan foydalanishingiz mumkin. Eslatma: ushbu clone variantida file faqat `.txt` turida yaratiladi.\n 1) "dir" - joriy folderdagi elementlarni ko'rish
+
+Ushbu dastur Windows CMD ning javada yozilgan clone varianti hisoblanadi. Dastur ishga tushganida siz `C://` locationda bo'lasiz. Quyidagi buyruqlar yordamida CMDdan foydalanishingiz mumkin. Eslatma: ushbu clone variantida file faqat `.txt` turida yaratiladi. 
+
+1) "`dir`" - joriy folderdagi elementlarni ko'rish;
 2) "cd folder_name" - folderga kirish
 3) "cd .." - folderdan chiqish
 4) "mkdir folder_name" - yangi folder ochish
