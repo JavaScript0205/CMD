@@ -63,6 +63,20 @@ public class CMD {
                         String file1 = cmd.split("/")[1];
                         String file2 = cmd.split("/")[2];
                         echo(file1, file2);
+                    } else if (cmd.equals("help")) {
+                        System.out.println("""
+                                CMD commands:
+                                1. dir - show directory
+                                2. cd - mode directory
+                                3. mkdir - make directory
+                                4. rmdir - remove directory
+                                5. copy ... ... - copy file from ... to ...
+                                6. rename ... ... - rename file from ... to ...
+                                7. read ... - read file
+                                8. echo ... ... - echo file writer
+                                9. quit or exit - exit program
+                                10. help - cmd commands
+                                """);
                     }
                 }
             }
@@ -159,6 +173,7 @@ public class CMD {
             in = new FileInputStream(currentPath.toString() + "/" + source);
             out = new FileOutputStream(currentPath.toString() + "/" + destination);
             out.write(in.readAllBytes());
+            out.flush();
             out.close();
             in.close();
         } catch (IOException e) {
