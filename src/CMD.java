@@ -25,9 +25,7 @@ public class CMD {
             System.out.print(currentPath.toString() + " : ");
             cmd = sc.nextLine();
             switch (cmd) {
-                case "dir" -> {
-                    dir();
-                }
+                case "dir" -> dir();
                 default -> {
                     if (cmd.startsWith("cd")) {
                         String subFolder = cmd.split(" ")[1];
